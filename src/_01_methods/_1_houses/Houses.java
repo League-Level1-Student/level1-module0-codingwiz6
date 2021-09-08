@@ -9,36 +9,58 @@ import org.jointheleague.graphical.robot.Robot;
  *    Level 1
  */
 public class Houses {
-		
+	
+	Robot ruby = new Robot("mini");
+	Random rubies = new Random();
 	public void run() {
 		
 		// Check the recipe to find out what code to put here
 		for(int i = 0; i <10; i++) {
-	Random rubies = new Random();
-	int rubiez = rubies.nextInt(100-20+1)+20;
-	chimmney(rubiez);
+	int rubiez = rubies.nextInt(3-1+1)+1;
+	String strHeight = " ";
+	if(rubiez == 3) {
+		String strHeight = "massive";
+	}
+	else if(rubiez == 2) {
+		String strHeight = "med";
+	}
+	else{
+		String strHeight = "mini";
+	}
+	
+	chimmney(strHeight);
 		}
 	
-//Right now, it makes a vertical bar. Probelely have to do with chimmney v
+//I have to fix the if statments. You can tell.
 		
 }
-	public void chimmney( int height)  {
-		
-		Robot ruby = new Robot();
+	public void chimmney(String strHeight)  {
+		int height = 0;
+		if(strHeight.equals("mini")) {
+			height = 60;
+		}
+		else if(strHeight.equals("med")) {
+			height = 120;
+		}
+		else{
+			height = 250;
+		}
+	
 		ruby.penDown();
 		ruby.setSpeed(20);
-		ruby.hide();
+		
 		
 		ruby.move(height);
 		ruby.turn(90);
 		ruby.move(20);
 		ruby.turn(90);
 		ruby.move(height);
-		
-		ruby.turn(270);
+		ruby.turn(-90);
 		ruby.move(20);
 		ruby.turn(-90);
-	
+		
+
+		
 	
 	}
 	}
