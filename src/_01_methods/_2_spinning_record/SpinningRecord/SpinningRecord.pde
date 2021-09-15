@@ -11,7 +11,7 @@
 PImage pictureOfRecord;   // This variable will hold your image
 
 // Create a variable to keep track of the image rotation angle. Initialize it to zero.
-
+int rotation = 0;
 
 // The setup method is run once when the program starts
 void setup() {
