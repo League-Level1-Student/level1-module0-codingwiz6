@@ -17,6 +17,7 @@ int rainY = 30;
    int randomNumber = (int) random(width);
 // The setup method is run once when the program starts
 void setup() {
+  
 
   //Set your canvas size
   
