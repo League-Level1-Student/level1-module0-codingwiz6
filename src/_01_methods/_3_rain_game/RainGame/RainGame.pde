@@ -21,6 +21,7 @@ void setup() {
 
   //Set your canvas size
   
+  
   size(500,500);
   
   //If you are using an image for the bucket, load it and resize it here.
