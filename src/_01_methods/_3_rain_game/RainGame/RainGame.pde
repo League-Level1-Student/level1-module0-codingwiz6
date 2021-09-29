@@ -68,7 +68,7 @@ void draw() {
   
   // When the rain drop has fallen to the bucket, call the checkCatch method
   //  to see if the rain drop is in the bucket.
-  
+  checkCatch(x);
  
  //This code will display the score on the screen. 
  // Change the color if it does not show up on your background.
