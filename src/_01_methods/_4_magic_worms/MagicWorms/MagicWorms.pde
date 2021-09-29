@@ -9,8 +9,9 @@
 void setup() {
 
   //Set your canvas size
-
+size(500,400);
   //Set a background color  
+background(8,82,155);
 
 }
 
@@ -21,12 +22,17 @@ void draw() {
   // Use a for loop to draw 300 small ellipses in a diagonal line across the canvas.
   // Make them a bright color.
   // RUN THE PROGRAM TO CHECK IT (see the recipe for the expected outcome).
-
+for(int wormy = 0; wormy <301; wormy++){
+//Moved floats. x and y needs to be changed. Good luck next time!!!
+ellipse(x,y,20,20);
+fill(195,184,240);
+}
   // STEP 2.
   // Now make each ellipse use random values for their x and y co-ordinates. Make sure they are inside the canvas. 
   // Hint:  random(int maxValue)
   // RUN THE PROGRAM TO CHECK IT (see the recipe for the expected outcome).
-  
+float x = random(width);
+float y = random(height);
   // STEP 3.
   // Now use the getWormX() and getWormY() methods for x and y co-ordinates of each ellipse
   //(use the for loop variable as the parameter to these methods).

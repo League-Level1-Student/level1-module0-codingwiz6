@@ -11,8 +11,6 @@ int score = 0;
 int bucketWidth = 70;
 int bucketHeight;
 PImage bucket;
-int y;
-int x;
 int rainY = 30;
    int randomNumber = (int) random(width);
 // The setup method is run once when the program starts
@@ -68,7 +66,9 @@ void draw() {
   
   // When the rain drop has fallen to the bucket, call the checkCatch method
   //  to see if the rain drop is in the bucket.
-  checkCatch(x);
+  if(rainY > 495) {
+    checkCatch(randomNumber);
+  }
  
  //This code will display the score on the screen. 
  // Change the color if it does not show up on your background.
