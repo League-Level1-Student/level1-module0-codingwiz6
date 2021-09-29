@@ -8,7 +8,7 @@
 
 
 int score = 0;
-int bucketWidth = 50;
+int bucketWidth = 70;
 int bucketHeight;
 PImage bucket;
 int y;
@@ -57,11 +57,11 @@ void draw() {
   // Each new drop should start at a random position (X position) at the top. 
   // Hint: This code will give you a random number between 0 and the width of your sketch.
  
- //Working on Bucket's width. It's all the way to the top with the other varabiles. Good Luck with the game!
+
   
   // Draw a bucket (rectangle or image) at the bottom of the screen. 
   // The bucket's width needs to be stored in the bucketWidth variable.
-  image (bucket, 200,400);
+  image (bucket, mouseX,400);
   
   // Make the bucket move side-to-side with the mouse. Hint: use mouseX
   
