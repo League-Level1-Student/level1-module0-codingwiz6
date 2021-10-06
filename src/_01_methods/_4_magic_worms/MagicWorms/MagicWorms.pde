@@ -22,17 +22,20 @@ void draw() {
   // Use a for loop to draw 300 small ellipses in a diagonal line across the canvas.
   // Make them a bright color.
   // RUN THE PROGRAM TO CHECK IT (see the recipe for the expected outcome).
-for(int wormy = 0; wormy <301; wormy++){
-//Moved floats. x and y needs to be changed. Good luck next time!!!
-ellipse(x,y,20,20);
-fill(195,184,240);
-}
+
   // STEP 2.
   // Now make each ellipse use random values for their x and y co-ordinates. Make sure they are inside the canvas. 
   // Hint:  random(int maxValue)
   // RUN THE PROGRAM TO CHECK IT (see the recipe for the expected outcome).
 float x = random(width);
 float y = random(height);
+for(int wormy = 0; wormy <301; wormy++){
+//Moved floats. x and y needs to be changed. Good luck next time!!!
+  x = getWormX(wormy);
+  y = getWormY(wormy);
+ellipse(x,y,10,10);
+fill(195,184,240);
+}
   // STEP 3.
   // Now use the getWormX() and getWormY() methods for x and y co-ordinates of each ellipse
   //(use the for loop variable as the parameter to these methods).
@@ -42,6 +45,7 @@ float y = random(height);
   // Call makeMagical() in your draw method before the for loop. 
   // OPTIONS: Pass in frameCount or another variable for the ellipse "red value", 
   // and i as the "green value" for some extra color coolness.
+  makeMagical();
 }
 
 /// DO NOT CHANGE THE CODE BELOW. CALL THE METHODS FROM THE DRAW METHOD
