@@ -27,17 +27,22 @@ public class DuellingButtons implements ActionListener {
 	public void run() {
 
 		// 1. Add the panel to the frame
-
+panel.add(frame);
 		// 2. Make the frame visible
-
+frame.setVisible(true);
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 3. Set the text of the leftButton to "Click me!"
-
+leftButton.setText("Click me!");
 		// 4. Set the text of the rightButton to "Click me!"
-
+rightButton.setText("Click me!");
 		// 5. Add an action listener to the leftButton
 
+//Working on these. Ask if use This. Hoping to still have Tyler!
+// |
+// V
+leftButton.addActionListener();
 		// 6. Add an action listener to the rightButton
-
+rightButton.addActionListener();
 		// 7. Add the leftButton to the panel
 
 		// 8. Add the rightButton to the panel
