@@ -8,5 +8,6 @@ public class ArtGalleryMachine {
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 	
+	
 	//Make the 4 buttons! Good luck! Have Fun!
 }
