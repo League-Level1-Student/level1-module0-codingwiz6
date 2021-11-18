@@ -56,7 +56,6 @@ public class ArtGalleryMachine implements ActionListener {
 			turkeuy=createImage(turk);
 			frame1.add(turkeuy);
 			frame1.pack();
-			
 		}
 		if (arg0.getSource() == buttontwo) {
 			String pie= "https://image.shutterstock.com/image-vector/drawing-pumpkin-pie-piece-topped-260nw-487728403.jpg";
