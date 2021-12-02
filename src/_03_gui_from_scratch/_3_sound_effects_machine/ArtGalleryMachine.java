@@ -19,10 +19,10 @@ public class ArtGalleryMachine implements ActionListener {
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 
-	JButton buttonone = new JButton();
-	JButton buttontwo = new JButton();
-	JButton buttonthree = new JButton();
-	JButton buttonfour = new JButton();
+	JButton buttonone = new JButton("$,$");
+	JButton buttontwo = new JButton("0w0");
+	JButton buttonthree = new JButton("@o@");
+	JButton buttonfour = new JButton("*o*");
 
 	public void run() {
 
@@ -67,10 +67,22 @@ public class ArtGalleryMachine implements ActionListener {
 			frame2.pack();
 		}
 		if (arg0.getSource() == buttonthree) {
-			//Use the code above to help with this one! Good luck and Have fun! P.S For each, make different frame.
+			String ginger = "https://cdn.w600.comps.canstockphoto.com/ginger-bread-man-house-illustration-drawing_csp76604699.jpg";
+			JFrame breadf2 = new JFrame();
+			breadf2.setVisible(true);
+			Component christmas;
+			christmas=createImage(ginger);
+			breadf2.add(christmas);
+			breadf2.pack();
 		}
 		if (arg0.getSource() == buttonfour) {
-			JOptionPane.showMessageDialog(null, "4");
+			String christmascorgi = "https://image.shutterstock.com/image-vector/cute-cartoon-shiba-inu-puppy-260nw-1558763648.jpg";
+			JFrame stocking = new JFrame();
+			stocking.setVisible(true);
+			Component chimney;
+			chimney=createImage(christmascorgi);
+			stocking.add(chimney);
+			stocking.pack();
 		}
 
 	}
